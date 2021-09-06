@@ -12,6 +12,8 @@ partial class Tool : Carriable
 	[Net, Predicted]
 	public BaseTool CurrentTool { get; set; }
 
+	public static readonly int slot = 7;
+
 	public override void Spawn()
 	{
 		base.Spawn();

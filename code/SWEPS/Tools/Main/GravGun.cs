@@ -3,7 +3,7 @@ using Sandbox.Joints;
 using System;
 using System.Linq;
 
-[Library( "gravgun" )]
+[Library( "gravgun", Title = "GravGun" )]
 public partial class GravGun : Carriable
 {
 	public override string ViewModelPath => "weapons/rust_pistol/v_rust_pistol.vmdl";
@@ -14,6 +14,8 @@ public partial class GravGun : Carriable
 	public PhysicsBody HeldBody { get; private set; }
 	public Rotation HeldRot { get; private set; }
 	public ModelEntity HeldEntity { get; private set; }
+
+	public static readonly int slot = 2;
 
 	protected virtual float MaxPullDistance => 2000.0f;
 	protected virtual float MaxPushDistance => 500.0f;

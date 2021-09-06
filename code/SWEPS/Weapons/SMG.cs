@@ -9,6 +9,8 @@ partial class SMG : Weapon
 	public override float SecondaryRate => 1.0f;
 	public override float ReloadTime => 5.0f;
 
+	public static readonly int slot = 5;
+
 	public override void Spawn()
 	{
 		base.Spawn();

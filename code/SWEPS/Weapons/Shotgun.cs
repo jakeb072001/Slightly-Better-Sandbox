@@ -8,6 +8,8 @@ partial class Shotgun : Weapon
 	public override float SecondaryRate => 1;
 	public override float ReloadTime => 0.5f;
 
+	public static readonly int slot = 4;
+
 	public override void Spawn()
 	{
 		base.Spawn();

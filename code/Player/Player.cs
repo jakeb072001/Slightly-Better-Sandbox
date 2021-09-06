@@ -45,7 +45,15 @@ partial class SandboxPlayer : Player
 	public override void Respawn()
 	{
 		SetModel( "models/citizen/citizen.vmdl" );
-		//SetModel( "models/playermodels/bulk/bulk.vmdl" );
+		// Custom Playermodel stuff
+		//RenderAlpha = 0;
+
+		//var ent = new Prop
+		//{
+		//	Position = 0
+		//};
+		//ent.SetModel( "models/playermodels/bulk/bulk.vmdl" );
+		//ent.SetParent( this, true );
 
 		Controller = new WalkController();
 		Animator = new StandardPlayerAnimator();
@@ -78,15 +86,6 @@ partial class SandboxPlayer : Player
 
 		base.Respawn();
 	}
-	//public override void CreateViewModel()
-	//{
-	//	base.CreateViewModel();
-	//
-	//	viewLight = CreateLight();
-	//	viewLight.SetParent( ViewModelEntity, "light", new Transform( LightOffset ) );
-	//	viewLight.EnableViewmodelRendering = true;
-	//	viewLight.Enabled = LightEnabled;
-	//}
 
 	public override void OnKilled()
 	{

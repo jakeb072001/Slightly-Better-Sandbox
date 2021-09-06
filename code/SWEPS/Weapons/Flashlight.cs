@@ -16,6 +16,8 @@ partial class Flashlight : Weapon
 
 	TimeSince timeSinceLightToggled;
 
+	public static readonly int slot = 6;
+
 	public override void Spawn()
 	{
 		base.Spawn();

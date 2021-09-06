@@ -10,6 +10,8 @@ partial class Pistol : Weapon
 
 	public TimeSince TimeSinceDischarge { get; set; }
 
+	public static readonly int slot = 3;
+
 	public override void Spawn()
 	{
 		base.Spawn();

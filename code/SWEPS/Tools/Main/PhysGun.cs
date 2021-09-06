@@ -3,7 +3,7 @@ using Sandbox.Joints;
 using System;
 using System.Linq;
 
-[Library( "physgun" )]
+[Library( "physgun", Title = "PhysGun" )]
 public partial class PhysGun : Carriable
 {
 	public override string ViewModelPath => "weapons/rust_pistol/v_rust_pistol.vmdl";
@@ -17,6 +17,8 @@ public partial class PhysGun : Carriable
 
 	protected float holdDistance;
 	protected bool grabbing;
+
+	public static readonly int slot = 1;
 
 	protected virtual float MinTargetDistance => 0.0f;
 	protected virtual float MaxTargetDistance => 10000.0f;
