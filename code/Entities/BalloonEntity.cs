@@ -22,7 +22,7 @@ public partial class BalloonEntity : Prop
 		SetModel( Model );
 		SetupPhysicsFromModel( PhysicsMotionType.Dynamic, false );
 		PhysicsBody.GravityScale = GravityScale;
-		RenderColor = Color.Random.ToColor32();
+		RenderColor = Color.Random;
 	}
 
 	public override void OnKilled()
